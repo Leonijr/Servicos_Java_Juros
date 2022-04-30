@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="br.edu.ifmt.cba" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="br.edu.ifmt.cba">
+
+<xs:element name="JuroComposto" type="tns:JuroComposto"/>
+
+<xs:element name="JuroCompostoResponse" type="tns:JuroCompostoResponse"/>
+
+<xs:element name="JuroSimples" type="tns:JuroSimples"/>
+
+<xs:element name="JuroSimplesResponse" type="tns:JuroSimplesResponse"/>
+
+<xs:element name="MontanteComposto" type="tns:MontanteComposto"/>
+
+<xs:element name="MontanteCompostoResponse" type="tns:MontanteCompostoResponse"/>
+
+<xs:element name="MontanteSimples" type="tns:MontanteSimples"/>
+
+<xs:element name="MontanteSimplesResponse" type="tns:MontanteSimplesResponse"/>
+
+<xs:element name="TaxaJuro" type="tns:TaxaJuro"/>
+
+<xs:element name="TaxaJuroResponse" type="tns:TaxaJuroResponse"/>
+
+<xs:complexType name="JuroSimples">
+<xs:sequence>
+<xs:element name="capital" type="xs:float"/>
+<xs:element name="taxa" type="xs:float"/>
+<xs:element name="periodo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="JuroSimplesResponse">
+<xs:sequence>
+<xs:element name="respotaJS" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TaxaJuro">
+<xs:sequence>
+<xs:element name="capital" type="xs:float"/>
+<xs:element name="taxa" type="xs:float"/>
+<xs:element name="periodo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TaxaJuroResponse">
+<xs:sequence>
+<xs:element name="respotaTJ" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="JuroComposto">
+<xs:sequence>
+<xs:element name="capital" type="xs:float"/>
+<xs:element name="taxa" type="xs:float"/>
+<xs:element name="periodo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="JuroCompostoResponse">
+<xs:sequence>
+<xs:element name="respotaJC" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MontanteSimples">
+<xs:sequence>
+<xs:element name="capital" type="xs:float"/>
+<xs:element name="taxa" type="xs:float"/>
+<xs:element name="periodo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MontanteSimplesResponse">
+<xs:sequence>
+<xs:element name="respotaMS" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MontanteComposto">
+<xs:sequence>
+<xs:element name="capital" type="xs:float"/>
+<xs:element name="taxa" type="xs:float"/>
+<xs:element name="periodo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MontanteCompostoResponse">
+<xs:sequence>
+<xs:element name="respotaMC" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
